@@ -1,2 +1,12 @@
-# demo_python_flask
-demo usando flask para la incluton
+# API para recibir jsons
+Hecho por Lex y revisado por Henry
+
+## formateo de código
+```
+black *.py
+```
+
+## levantar servidor
+```
+python app.py
+```

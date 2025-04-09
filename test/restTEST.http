@@ -1,0 +1,47 @@
+# Variables
+@IP_SERVIDOR=algo.algo.algo.algo
+
+
+###
+# probar form1
+
+POST http://localhost:7000/form1 HTTP/1.1
+content-type: application/json
+
+{    
+    "quoteCreated":"04/19/2044",
+    "state":"FL",
+    "propertyType":"Residential"
+}
+
+###
+# probar form2
+
+POST http://localhost:7000/form2 HTTP/1.1
+content-type: application/json
+
+{    
+    "state":"Arizona",
+    "propertyType":"Residential"
+}
+
+
+###
+# info en  servidor
+
+GET http://{{IP_SERVIDOR}}:7000/ HTTP/1.1
+content-type: application/json
+
+
+###
+# probar form2 en servidor
+
+POST http://{{IP_SERVIDOR}}:7000/form2 HTTP/1.1
+content-type: application/json
+
+{    
+    "state":"Arizona",
+    "propertyType":"Residential"
+}
+
+
